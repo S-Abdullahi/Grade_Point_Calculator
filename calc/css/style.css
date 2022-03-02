@@ -25,21 +25,25 @@ body {
   font-size: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: rgba(211, 211, 211, 0.514);
+  transition: all 0.5s ease-out
   /* text-align: center; */
+}
+
+
+
+
+
+/***** HEADER*** */
+.slogan{
+  font-size: 0.8rem;
+  font-style: italic;
+  color: gray;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
-footer {
-
-}
-
 section{
   width: 50%;
   margin: 50px auto;
@@ -54,7 +58,7 @@ section > *{
 /******TABLE**** */
 
 tr, td, th {
-  border: solid black 1px;
+  border: solid #1b4332 1px;
 }
 
 th{
@@ -62,47 +66,50 @@ th{
   font-size: 0.8rem;
 }
 
-.slogan{
-  font-size: 0.8rem;
-  font-style: italic;
-  color: gray;
-}
 
 table{
   border-spacing: 0;
   margin-bottom: 30px;
+  
 }
 
 
 select{
   font-size: 0.8rem;
-  color: gray;
+  color: white;
   background-color: #b5c99a;
   border: 0;
+  transition: all 0.5s ease-out;
 }
+
 
 section{
   text-align: center;
 }
 
 option{
-  background: #e9f5db;
+  background: white;
   text-align: center;
+  transition: all 0.5s ease-out;
+  border-top: solid black 1px;
+  color: #1b4332;
 
 }
 
-
-
-.display{
-  width: 30%;
-  height: 20px;
-  border: solid black 2px;
-  border-radius: 5px;
+option:hover{
+  background-color: gray;
 }
 
 /***** INPUT*** */
+form{
+  padding: 0;
+}
 input{
   border: 0;
+}
+input:hover{
+background-color: #b5c99a;
+transition: all 0.5s ease-out
 }
 
 tr > td:nth-child(1){
@@ -110,9 +117,8 @@ tr > td:nth-child(1){
   color: gray;
 }
 
-.course_col{
-  overflow: auto;
-}
+
+/******CALCULATE BUTTON**** */
 
 button{
   height: 40px;
@@ -122,6 +128,7 @@ button{
   color: white;
   border: 0;
   cursor: pointer;
+  transition: all 0.5s ease-out
 }
 
 button:hover{
@@ -129,11 +136,13 @@ button:hover{
   border-color: #718355;
   border: solid 2px;
   color: #718355;
+  
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/* *****OUTPUT******/
 .tcudiv{
   display: flex;
   flex-direction: row;
@@ -173,7 +182,20 @@ footer{
 
 .icon{
   margin-left: 5px;
+  color: #718355 ;
 }
+
+a{
+  color: #718355
+}
+
+a:hover{
+
+  transition: all 0.5s ease-out;
+}
+
+/*****RESPONSIVENESS*******/
+
 @media screen and (max-width:375px){
 
   h1{
@@ -187,7 +209,7 @@ footer{
   }
 
   button{
-    width: 200px;
+    width: 170px;
   }
 
   #comment{
@@ -207,8 +229,36 @@ footer{
   }
 
 input{
-  width: 70px;
+  width: 90px;
 }
 
  
+}
+
+@media (min-width:376px) and (max-width:767px){
+  section{
+    width: 100%;
+  }
+
+  #comment{
+    width: 50%;
+  }
+
+  input{
+    width: 100px;
+  }
+
+  button{
+    width:170px;
+  }
+}
+
+@media (min-width:768px){
+  section{
+    width: 60%;
+  }
+
+  #comment{
+    width: 50%;
+  }
 }

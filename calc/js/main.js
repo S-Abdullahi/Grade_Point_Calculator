@@ -95,7 +95,7 @@ function keyButton(){
         document.querySelector('#comment').textContent = "Don't relent and keep aimig high. Keep it up"
         document.querySelector('#gradePoint').style.backgroundColor = '#38b000'
     }
-        else if(gradePoint > 4.0 && gradePoint < 4.49){
+        else if(gradePoint >= 4.0 && gradePoint < 4.49){
             document.querySelector('#comment').textContent = "You should be proud of yourself. Don't relax and keep pushing. Kudos!"
             document.querySelector('#gradePoint').style.backgroundColor = '#9ef01a'
         }
