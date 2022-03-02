@@ -12,346 +12,373 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c31a3ebc2d.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="bootstrap.min.css">
 	</head>
 	<body>
-		<h1>Grade Point Calculator</h1>
-		
-		<button>Calculat</button>
-		<span class="span"></span>
+		<section>
+			<header>
+				<h1>Grade Point Calculator</h1>
+			
+				<p class="slogan">Calculate, Project, Plan</p>
+			</header>
+			
 
-		<table>
-			<thead>
-				<tr>
-					<th>S/N</th>
-					<th>COURSE</th>
-					<th>UNIT</th>
-					<th>GRADE</th>
-					<th>TOTAL</th>
-				</tr>
-			</thead>
+			<table class="table-info">
+			
+					<tr class="table-info">
+						<th>S/N</th>
+						<th>COURSE</th>
+						<th>UNIT</th>
+						<th>GRADE</th>
+						<th>TOTAL</th>
+					</tr>
+			
 
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseOneUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseOneGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointOne"></td>
-				</tr>
+					<tr>
+						<td>1</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseOneUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseOneGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointOne"></td>
+					</tr>
 
-				<tr>
-					<td>2</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseTwoUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseTwoGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointTwo"></td>
-				</tr>
+					<tr>
+						<td>2</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseTwoUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseTwoGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointTwo"></td>
+					</tr>
 
-				<tr>
-					<td>3</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseThreeUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseThreeGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointThree"></td>
-				</tr>
+					<tr>
+						<td>3</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseThreeUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseThreeGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointThree"></td>
+					</tr>
 
-				<tr>
-					<td>4</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseFourUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseFourGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointFour"></td>
-				</tr>
+					<tr>
+						<td>4</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseFourUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseFourGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointFour"></td>
+					</tr>
 
-				<tr>
-					<td>5</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseFiveUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseFiveGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointFive"></td>
-				</tr>
+					<tr>
+						<td>5</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseFiveUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseFiveGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointFive"></td>
+					</tr>
 
-				<tr>
-					<td>6</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseSixUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseSixGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointSix"></td>
-				</tr>
+					<tr>
+						<td>6</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseSixUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseSixGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointSix"></td>
+					</tr>
 
-				<tr>
-					<td>7</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseSevenUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseSevenGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointSeven"></td>
-				</tr>
+					<tr>
+						<td>7</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseSevenUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseSevenGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointSeven"></td>
+					</tr>
 
-				<tr>
-					<td>8</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseEightUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseEightGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointEight"></td>
-				</tr>
+					<tr>
+						<td>8</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseEightUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseEightGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointEight"></td>
+					</tr>
 
-				<tr>
-					<td>9</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseNineUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseNineGrade">
-							<option value="">select grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointNine"></td>
-				</tr>
+					<tr>
+						<td>9</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseNineUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseNineGrade">
+								<option value="">grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointNine"></td>
+					</tr>
 
-				<tr>
-					<td>10</td>
-					<td class="course">
-						<form action="">
-							<input type="text" maxlength="6">
-						</form>
-					</td>
-					<td class="unit">
-						<select name="" id="courseTenUnit">
-							<option value="">select unit</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</td>
-					<td class="grade">
-						<select name="" id="courseTenGrade">
-							<option value="">select Grade</option>
-							<option value="5">A</option>
-							<option value="4">B</option>
-							<option value="3">C</option>
-							<option value="2">D</option>
-							<option value="1">E</option>
-							<option value="0">F</option>
-						</select>
-					</td>
-					<td class="courseGradePoint gradePointTen"></td>
-				</tr>
-				
-			</tbody>
-		</table>
+					<tr>
+						<td>10</td>
+						<td class="course">
+							<form action="">
+								<input type="text" maxlength="6">
+							</form>
+						</td>
+						<td class="unit">
+							<select name="" id="courseTenUnit">
+								<option value="">unit</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+						<td class="grade">
+							<select name="" id="courseTenGrade">
+								<option value="">Grade</option>
+								<option value="5">A</option>
+								<option value="4">B</option>
+								<option value="3">C</option>
+								<option value="2">D</option>
+								<option value="1">E</option>
+								<option value="0">F</option>
+							</select>
+						</td>
+						<td class="courseGradePoint gradePointTen"></td>
+					</tr>
+					
+				<!-- </tbody> -->
+			</table>
 
-		<h4>Total Course Unit: <span id="totalCourseUnit"></span></h4>                                          
-		<h4>Total Grade Point: <span id="totalGradePoint"></span></h4>
-		<h4>Grade Point (GP): <span id="gradePoint"></span></h4>
-		<h4>Comment: <span id="comment"></span></h4>
-
+			<div>
+				<button>Calculate</button>
+			</div>
+			
 	
+			<div class="tcudiv">
+				<h4>Total Course Unit:</h4> 
+				<p id="totalCourseUnit" class="tcu"></p>
+			</div>   
+
+			<div class="tcudiv">
+				<h4>Total Grade Point:</h4>
+				<p id="totalGradePoint" class="tcu"></p>
+			</div>
+
+			<div class="tcudiv">
+				<h4>Grade Point (GP):</h4>
+				<p id="gradePoint" class="tcu"></p>
+			</div>
+
+			<div class="tcudiv comment">
+				<h4>Comment:</h4>
+				<p id="comment" class="tcu"></p>
+			</div>
+		</section>
+
+		<footer>
+			<i class="fa-brands fa-github"><span class="icon">S-Abdullahi</span></i>
+		</footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

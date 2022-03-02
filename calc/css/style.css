@@ -22,7 +22,10 @@
 /*******************************************/
 
 body {
+  font-size: 100%;
   font-family: 'Poppins', sans-serif;
+  background-color: rgba(211, 211, 211, 0.514);
+  /* text-align: center; */
 }
 
 
@@ -37,6 +40,175 @@ footer {
 
 }
 
+section{
+  width: 50%;
+  margin: 50px auto;
+}
+
+section > *{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******TABLE**** */
+
+tr, td, th {
+  border: solid black 1px;
+}
+
+th{
+  background-color: #718355;
+  font-size: 0.8rem;
+}
+
+.slogan{
+  font-size: 0.8rem;
+  font-style: italic;
+  color: gray;
+}
+
+table{
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+
+
+select{
+  font-size: 0.8rem;
+  color: gray;
+  background-color: #b5c99a;
+  border: 0;
+}
+
+section{
+  text-align: center;
+}
+
+option{
+  background: #e9f5db;
+  text-align: center;
+
+}
+
+
+
+.display{
+  width: 30%;
+  height: 20px;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+/***** INPUT*** */
+input{
+  border: 0;
+}
+
+tr > td:nth-child(1){
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.course_col{
+  overflow: auto;
+}
+
+button{
+  height: 40px;
+  width: 30%;
+  border-radius: 50px;
+  background-color: #718355;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgba(211, 211, 211, 0.514);
+  border-color: #718355;
+  border: solid 2px;
+  color: #718355;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.tcudiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.tcu{
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  border: solid #718355 2px;
+  border-radius: 5px;
+}
+
+h4{
+  color: gray;
+}
+
+#comment{
+  width: 30%;
+  height: 100px;
+  font-size: 0.8rem;
+  line-height: 18px;
+  padding: 5px;
+}
+
+footer{
+  margin-bottom: 20px;
+  text-align: center;
+  color: #718355;
+}
+
+.icon{
+  margin-left: 5px;
+}
+@media screen and (max-width:375px){
+
+  h1{
+    font-size: 1.5rem;
+  }
+ 
+  header{
+    line-height: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  button{
+    width: 200px;
+  }
+
+  #comment{
+    width: 60%;
+  }
+
+  .tcudiv{
+    width: 100%;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+
+input{
+  width: 70px;
+}
+
+ 
+}

@@ -89,22 +89,31 @@ function keyButton(){
 
     document.querySelector('#totalCourseUnit').textContent = totalCourseUnit
     document.querySelector('#totalGradePoint').textContent = totalGradePoint
-    document.querySelector('#gradePoint').textContent = gradePoint
+    document.querySelector('#gradePoint').textContent = gradePoint.toFixed(2)
 
     if(gradePoint > 4.5){
         document.querySelector('#comment').textContent = "Don't relent and keep aimig high. Keep it up"
+        document.querySelector('#gradePoint').style.backgroundColor = '#38b000'
     }
         else if(gradePoint > 4.0 && gradePoint < 4.49){
             document.querySelector('#comment').textContent = "You should be proud of yourself. Don't relax and keep pushing. Kudos!"
+            document.querySelector('#gradePoint').style.backgroundColor = '#9ef01a'
         }
             else if(gradePoint > 3.5 && gradePoint < 4.0){
                 document.querySelector('#comment').textContent = "Fasten your belt. You won't like to slip. So, head up!"
+                document.querySelector('#gradePoint').style.backgroundColor = '#abff4f'
             }
                 else if(gradePoint >= 2.5 && gradePoint <3.50){
                     document.querySelector('#comment').textContent = "You are some steps behind, so, don't give up. Yes! you're trying your best but you need to be more solid and focused. Don't limit yourself"
+                    document.querySelector('#gradePoint').style.backgroundColor = '#f3de2c'
                 }
                     else if(gradePoint < 2.5 ){
                         document.querySelector('#comment').textContent = "Your grade shouldn't define your potential. You have special in yourself and you can only unleash that potential if you believe in yourself and have grit to learn. Be proud of yourself"
+                        document.querySelector('#gradePoint').style.backgroundColor = '#fb6107'
                     }
+    if(totalCourseUnit === 0 && totalGradePoint === 0){
+        document.querySelector('#gradePoint').textContent = '0'
+    }
+    
 }
 
